@@ -36,4 +36,5 @@ def get_page(url: str) -> str:
     '''Returns the content of a URL after caching the request's response,
     and tracking the request.
     '''
+    result = requests.get(url)
     return requests.get(url).text
